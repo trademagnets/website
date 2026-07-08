@@ -41,21 +41,24 @@
             background: #121418;
         }
         ::-webkit-scrollbar-thumb {
-            background: #C41E3A;
+            background: #DC2626;
             border-radius: 10px;
         }
 
         /* ============================================================
-           UTILITY — CARDINAL RED ACCENT
+           UTILITY — RED & YELLOW ACCENTS
            ============================================================ */
-        .text-cardinal {
-            color: #C41E3A;
+        .text-red {
+            color: #DC2626;
         }
-        .bg-cardinal {
-            background: #C41E3A;
+        .text-yellow {
+            color: #FACC15;
         }
-        .border-cardinal {
-            border-color: #C41E3A;
+        .bg-red {
+            background: #DC2626;
+        }
+        .border-red {
+            border-color: #DC2626;
         }
 
         .star-divider {
@@ -69,13 +72,13 @@
             flex: 1;
             max-width: 80px;
             height: 1.5px;
-            background: linear-gradient(90deg, transparent, rgba(196, 30, 58, 0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(250, 204, 21, 0.4), transparent);
         }
         .star-divider .star {
-            color: #C41E3A;
+            color: #FACC15;
             font-size: 0.9rem;
             letter-spacing: 4px;
-            opacity: 0.7;
+            opacity: 0.9;
         }
 
         .glow-card {
@@ -87,8 +90,8 @@
             transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
         }
         .glow-card:hover {
-            border-color: rgba(196, 30, 58, 0.25);
-            box-shadow: 0 24px 56px -16px rgba(196, 30, 58, 0.12);
+            border-color: rgba(220, 38, 38, 0.25);
+            box-shadow: 0 24px 56px -16px rgba(220, 38, 38, 0.12);
         }
 
         .section-label {
@@ -97,11 +100,11 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #C41E3A;
-            background: rgba(196, 30, 58, 0.1);
+            color: #DC2626;
+            background: rgba(220, 38, 38, 0.1);
             padding: 4px 16px;
             border-radius: 40px;
-            border: 1px solid rgba(196, 30, 58, 0.15);
+            border: 1px solid rgba(220, 38, 38, 0.15);
             margin-bottom: 12px;
         }
 
@@ -113,8 +116,8 @@
             letter-spacing: -0.02em;
             line-height: 1.1;
         }
-        .section-title .cardinal {
-            color: #C41E3A;
+        .section-title .red {
+            color: #DC2626;
         }
         .section-sub {
             color: #8898a8;
@@ -134,7 +137,7 @@
             background: rgba(7, 9, 11, 0.82);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
-            border-bottom: 1px solid rgba(196, 30, 58, 0.12);
+            border-bottom: 1px solid rgba(220, 38, 38, 0.12);
             z-index: 1000;
             padding: 0 28px;
         }
@@ -151,7 +154,7 @@
             font-weight: 900;
             font-size: 1.8rem;
             letter-spacing: -0.02em;
-            color: #C41E3A;
+            color: #DC2626;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -159,7 +162,8 @@
         }
         .logo-text .star-icon {
             font-size: 1rem;
-            opacity: 0.6;
+            opacity: 0.9;
+            color: #FACC15;
         }
         .nav-links {
             display: flex;
@@ -182,7 +186,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: #C41E3A;
+            background: #DC2626;
             transition: 0.3s;
             border-radius: 4px;
         }
@@ -194,8 +198,8 @@
         }
         .nav-cta {
             background: transparent !important;
-            border: 1.5px solid #C41E3A;
-            color: #C41E3A !important;
+            border: 1.5px solid #DC2626;
+            color: #DC2626 !important;
             padding: 8px 28px;
             border-radius: 40px;
             font-weight: 600;
@@ -203,17 +207,17 @@
             transition: 0.3s;
         }
         .nav-cta:hover {
-            background: #C41E3A !important;
+            background: #DC2626 !important;
             color: #07090b !important;
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(196, 30, 58, 0.2);
+            box-shadow: 0 8px 24px rgba(220, 38, 38, 0.2);
         }
         .nav-cta::after {
             display: none !important;
         }
 
         /* ============================================================
-           HERO — floating stars, cardinal accents
+           HERO — floating stars (yellow), red accents
            ============================================================ */
         .hero {
             position: relative;
@@ -225,8 +229,8 @@
             padding: 40px 24px 80px;
             overflow: hidden;
             background:
-                radial-gradient(ellipse at 20% 30%, rgba(196, 30, 58, 0.08) 0%, transparent 55%),
-                radial-gradient(ellipse at 80% 70%, rgba(196, 30, 58, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% 30%, rgba(220, 38, 38, 0.08) 0%, transparent 55%),
+                radial-gradient(ellipse at 80% 70%, rgba(220, 38, 38, 0.05) 0%, transparent 50%),
                 #07090b;
         }
 
@@ -239,7 +243,7 @@
         }
         .hero-stars .star-float {
             position: absolute;
-            color: rgba(196, 30, 58, 0.08);
+            color: rgba(250, 204, 21, 0.08);
             font-size: 1.2rem;
             animation: floatStar 18s infinite alternate ease-in-out;
         }
@@ -327,7 +331,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C41E3A' fill-opacity='0.025'%3E%3Cpath d='M50 50v-4h-4v4h-4v2h4v4h2v-4h4v-2h-4zm0-40V6h-4v4h-4v2h4v4h2v-4h4V8h-4zM10 50v-4H6v4H2v2h4v4h2v-4h4v-2H6zM10 10V6H6v4H2v2h4v4h2v-4h4V8h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23DC2626' fill-opacity='0.025'%3E%3Cpath d='M50 50v-4h-4v4h-4v2h4v4h2v-4h4v-2h-4zm0-40V6h-4v4h-4v2h4v4h2v-4h4V8h-4zM10 50v-4H6v4H2v2h4v4h2v-4h4v-2H6zM10 10V6H6v4H2v2h4v4h2v-4h4V8h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             opacity: 0.5;
             z-index: 0;
         }
@@ -342,13 +346,13 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: rgba(196, 30, 58, 0.08);
-            border: 1px solid rgba(196, 30, 58, 0.15);
+            background: rgba(250, 204, 21, 0.1);
+            border: 1px solid rgba(250, 204, 21, 0.2);
             padding: 6px 20px 6px 16px;
             border-radius: 60px;
             font-size: 0.8rem;
             font-weight: 500;
-            color: #C41E3A;
+            color: #FACC15;
             letter-spacing: 0.5px;
             margin-bottom: 24px;
             backdrop-filter: blur(4px);
@@ -357,7 +361,7 @@
             display: inline-block;
             width: 8px;
             height: 8px;
-            background: #C41E3A;
+            background: #FACC15;
             border-radius: 50%;
             animation: pulseDot 2s infinite;
         }
@@ -382,21 +386,22 @@
             letter-spacing: -0.02em;
         }
         .hero h1 .highlight {
-            color: #C41E3A;
+            color: #DC2626;
             position: relative;
         }
         .hero h1 .highlight::after {
             content: '✦';
             font-size: 1.6rem;
             margin-left: 6px;
-            opacity: 0.5;
+            opacity: 1;
+            color: #FACC15;
             display: inline-block;
             animation: sparkle 3s infinite;
         }
         @keyframes sparkle {
             0%,
             100% {
-                opacity: 0.4;
+                opacity: 0.6;
                 transform: scale(1) rotate(0deg);
             }
             50% {
@@ -442,19 +447,19 @@
         }
 
         .btn-3d-primary {
-            background: #C41E3A;
+            background: #DC2626;
             color: #07090b;
-            box-shadow: 0 8px 0 #7A0F1F, 0 10px 30px rgba(196, 30, 58, 0.25);
+            box-shadow: 0 8px 0 #991B1B, 0 10px 30px rgba(220, 38, 38, 0.25);
             transform: translateY(0);
         }
         .btn-3d-primary:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 0 #7A0F1F, 0 18px 40px rgba(196, 30, 58, 0.35);
-            background: #D93A5A;
+            box-shadow: 0 12px 0 #991B1B, 0 18px 40px rgba(220, 38, 38, 0.35);
+            background: #EF4444;
         }
         .btn-3d-primary:active {
             transform: translateY(6px);
-            box-shadow: 0 4px 0 #7A0F1F, 0 8px 20px rgba(196, 30, 58, 0.2);
+            box-shadow: 0 4px 0 #991B1B, 0 8px 20px rgba(220, 38, 38, 0.2);
         }
 
         .btn-3d-outline {
@@ -465,31 +470,31 @@
             transform: translateY(0);
         }
         .btn-3d-outline:hover {
-            border-color: #C41E3A;
-            color: #C41E3A;
-            background: rgba(196, 30, 58, 0.06);
+            border-color: #DC2626;
+            color: #DC2626;
+            background: rgba(220, 38, 38, 0.06);
             transform: translateY(-4px);
-            box-shadow: 0 12px 0 rgba(196, 30, 58, 0.08);
+            box-shadow: 0 12px 0 rgba(220, 38, 38, 0.08);
         }
         .btn-3d-outline:active {
             transform: translateY(6px);
-            box-shadow: 0 4px 0 rgba(196, 30, 58, 0.04);
+            box-shadow: 0 4px 0 rgba(220, 38, 38, 0.04);
         }
 
         .btn-3d-secondary {
-            background: #C41E3A;
+            background: #DC2626;
             color: #07090b;
-            box-shadow: 0 8px 0 #7A0F1F, 0 10px 30px rgba(196, 30, 58, 0.2);
+            box-shadow: 0 8px 0 #991B1B, 0 10px 30px rgba(220, 38, 38, 0.2);
             transform: translateY(0);
         }
         .btn-3d-secondary:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 0 #7A0F1F, 0 18px 40px rgba(196, 30, 58, 0.3);
-            background: #D93A5A;
+            box-shadow: 0 12px 0 #991B1B, 0 18px 40px rgba(220, 38, 38, 0.3);
+            background: #EF4444;
         }
         .btn-3d-secondary:active {
             transform: translateY(6px);
-            box-shadow: 0 4px 0 #7A0F1F, 0 8px 20px rgba(196, 30, 58, 0.2);
+            box-shadow: 0 4px 0 #991B1B, 0 8px 20px rgba(220, 38, 38, 0.2);
         }
 
         .trust-badges {
@@ -509,18 +514,18 @@
             width: 52px;
             height: 52px;
             border-radius: 50%;
-            background: rgba(196, 30, 58, 0.08);
-            border: 1px solid rgba(196, 30, 58, 0.12);
+            background: rgba(220, 38, 38, 0.08);
+            border: 1px solid rgba(220, 38, 38, 0.12);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.3rem;
-            color: #C41E3A;
+            color: #DC2626;
             margin-bottom: 8px;
             transition: 0.3s;
         }
         .trust-item:hover .icon-wrap {
-            background: rgba(196, 30, 58, 0.16);
+            background: rgba(220, 38, 38, 0.16);
             transform: scale(1.05);
         }
         .trust-item .number {
@@ -569,7 +574,7 @@
         /* --- Mission --- */
         .mission-box {
             background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(196, 30, 58, 0.12);
+            border: 1px solid rgba(220, 38, 38, 0.12);
             border-radius: 28px;
             padding: 32px 40px;
             font-size: 1.15rem;
@@ -583,11 +588,11 @@
         }
         .mission-box .mission-icon {
             font-size: 2rem;
-            color: #C41E3A;
-            opacity: 0.6;
+            color: #FACC15;
+            opacity: 0.8;
         }
         .mission-box strong {
-            color: #C41E3A;
+            color: #DC2626;
             font-weight: 700;
         }
 
@@ -613,18 +618,18 @@
             top: 16px;
             right: 20px;
             font-size: 1.2rem;
-            opacity: 0.06;
-            color: #C41E3A;
+            opacity: 0.15;
+            color: #FACC15;
         }
         .compare-card:hover {
-            border-color: rgba(196, 30, 58, 0.2);
+            border-color: rgba(220, 38, 38, 0.2);
             transform: translateY(-6px);
         }
         .compare-card.pain {
-            border-left: 3px solid #C41E3A;
+            border-left: 3px solid #DC2626;
         }
         .compare-card.gain {
-            border-left: 3px solid #C41E3A;
+            border-left: 3px solid #DC2626;
         }
         .compare-card h3 {
             font-size: 1.3rem;
@@ -648,14 +653,14 @@
         }
         .compare-card.pain ul li::before {
             content: "✕";
-            color: #C41E3A;
+            color: #DC2626;
             position: absolute;
             left: 0;
             font-weight: 700;
         }
         .compare-card.gain ul li::before {
             content: "✓";
-            color: #C41E3A;
+            color: #DC2626;
             position: absolute;
             left: 0;
             font-weight: 700;
@@ -677,7 +682,7 @@
         }
         .course-card:hover {
             transform: translateY(-10px);
-            border-color: rgba(196, 30, 58, 0.3);
+            border-color: rgba(220, 38, 38, 0.3);
             box-shadow: 0 24px 56px -16px rgba(0, 0, 0, 0.7);
         }
         .course-card .card-img {
@@ -695,12 +700,12 @@
             position: absolute;
             top: -12px;
             right: 20px;
-            background: rgba(196, 30, 58, 0.12);
-            border: 1px solid rgba(196, 30, 58, 0.15);
+            background: rgba(250, 204, 21, 0.12);
+            border: 1px solid rgba(250, 204, 21, 0.2);
             border-radius: 40px;
             padding: 2px 14px;
             font-size: 0.7rem;
-            color: #C41E3A;
+            color: #FACC15;
             letter-spacing: 0.5px;
             font-weight: 600;
             backdrop-filter: blur(4px);
@@ -712,7 +717,7 @@
             margin-bottom: 2px;
         }
         .course-body .level {
-            color: #C41E3A;
+            color: #DC2626;
             font-weight: 600;
             font-size: 0.75rem;
             text-transform: uppercase;
@@ -725,7 +730,7 @@
             font-size: 0.95rem;
         }
         .course-body .btn-link {
-            color: #C41E3A;
+            color: #DC2626;
             font-weight: 600;
             text-decoration: none;
             letter-spacing: 0.3px;
@@ -735,7 +740,7 @@
             gap: 6px;
         }
         .course-body .btn-link:hover {
-            color: #D93A5A;
+            color: #EF4444;
             gap: 12px;
         }
 
@@ -754,13 +759,13 @@
             transition: 0.3s;
         }
         .usp-item:hover {
-            border-color: rgba(196, 30, 58, 0.15);
+            border-color: rgba(220, 38, 38, 0.15);
             transform: translateY(-4px);
             background: rgba(255, 255, 255, 0.04);
         }
         .usp-item i {
             font-size: 1.6rem;
-            color: #C41E3A;
+            color: #DC2626;
             margin-bottom: 6px;
             display: block;
             opacity: 0.8;
@@ -792,10 +797,10 @@
             bottom: 16px;
             right: 20px;
             font-size: 0.8rem;
-            color: rgba(196, 30, 58, 0.15);
+            color: rgba(250, 204, 21, 0.2);
         }
         .review-card:hover {
-            border-color: rgba(196, 30, 58, 0.15);
+            border-color: rgba(220, 38, 38, 0.15);
             transform: translateY(-4px);
         }
         .review-card .stars {
@@ -818,7 +823,7 @@
         }
         .review-card .course {
             font-size: 0.7rem;
-            color: #C41E3A;
+            color: #FACC15;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -846,10 +851,10 @@
             top: 10px;
             right: 14px;
             font-size: 0.8rem;
-            color: rgba(196, 30, 58, 0.08);
+            color: rgba(250, 204, 21, 0.1);
         }
         .bonus-item:hover {
-            border-color: rgba(196, 30, 58, 0.2);
+            border-color: rgba(220, 38, 38, 0.2);
             transform: translateY(-6px);
             background: rgba(255, 255, 255, 0.04);
         }
@@ -869,7 +874,7 @@
             color: #9aaeb9;
         }
         .bonus-item .worth {
-            color: #C41E3A;
+            color: #FACC15;
             font-weight: 600;
             font-size: 0.8rem;
             margin-top: 6px;
@@ -886,7 +891,7 @@
             transition: 0.25s;
         }
         .faq-item:hover {
-            border-color: rgba(196, 30, 58, 0.08);
+            border-color: rgba(220, 38, 38, 0.08);
         }
         .faq-question {
             padding: 18px 24px;
@@ -901,7 +906,7 @@
         }
         .faq-question .icon {
             font-size: 1.2rem;
-            color: #C41E3A;
+            color: #FACC15;
             transition: transform 0.35s;
             flex-shrink: 0;
         }
@@ -921,13 +926,13 @@
             transform: rotate(45deg);
         }
         .faq-item.active {
-            border-color: rgba(196, 30, 58, 0.12);
+            border-color: rgba(220, 38, 38, 0.12);
         }
 
         /* --- Footer --- */
         .main-footer {
             margin-top: 32px;
-            border-top: 1px solid rgba(196, 30, 58, 0.08);
+            border-top: 1px solid rgba(220, 38, 38, 0.08);
             padding: 44px 0 20px;
         }
         .footer-grid {
@@ -954,7 +959,7 @@
             transition: 0.2s;
         }
         .footer-grid a:hover {
-            color: #C41E3A;
+            color: #DC2626;
         }
         .footer-logo .logo-text {
             font-size: 1.4rem;
@@ -975,7 +980,7 @@
             transition: 0.25s;
         }
         .social-icons a:hover {
-            color: #C41E3A;
+            color: #DC2626;
             transform: translateY(-3px);
         }
         .footer-bottom {
@@ -997,7 +1002,7 @@
             width: 100%;
             background: rgba(7, 9, 11, 0.92);
             backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(196, 30, 58, 0.12);
+            border-top: 1px solid rgba(220, 38, 38, 0.12);
             padding: 12px 24px;
             display: flex;
             justify-content: center;
@@ -1006,7 +1011,7 @@
             gap: 12px;
         }
         .sticky-cta .btn-sticky {
-            background: #C41E3A;
+            background: #DC2626;
             color: #07090b;
             border: none;
             padding: 14px 48px;
@@ -1015,7 +1020,7 @@
             font-size: 0.95rem;
             cursor: pointer;
             transition: 0.3s;
-            box-shadow: 0 8px 0 #7A0F1F, 0 8px 30px rgba(196, 30, 58, 0.2);
+            box-shadow: 0 8px 0 #991B1B, 0 8px 30px rgba(220, 38, 38, 0.2);
             transform: translateY(0);
             letter-spacing: 0.5px;
             display: inline-flex;
@@ -1023,17 +1028,18 @@
             gap: 8px;
         }
         .sticky-cta .btn-sticky:hover {
-            background: #D93A5A;
+            background: #EF4444;
             transform: translateY(-4px);
-            box-shadow: 0 12px 0 #7A0F1F, 0 16px 40px rgba(196, 30, 58, 0.3);
+            box-shadow: 0 12px 0 #991B1B, 0 16px 40px rgba(220, 38, 38, 0.3);
         }
         .sticky-cta .btn-sticky:active {
             transform: translateY(6px);
-            box-shadow: 0 4px 0 #7A0F1F, 0 8px 20px rgba(196, 30, 58, 0.2);
+            box-shadow: 0 4px 0 #991B1B, 0 8px 20px rgba(220, 38, 38, 0.2);
         }
         .sticky-cta .sticky-star {
-            color: rgba(196, 30, 58, 0.3);
+            color: #FACC15;
             font-size: 0.8rem;
+            opacity: 0.8;
         }
 
         /* ============================================================
@@ -1061,7 +1067,7 @@
             padding: 40px 34px;
             max-width: 440px;
             width: 90%;
-            border: 1px solid rgba(196, 30, 58, 0.15);
+            border: 1px solid rgba(220, 38, 38, 0.15);
             box-shadow: 0 48px 96px rgba(0, 0, 0, 0.8);
             position: relative;
         }
@@ -1077,15 +1083,15 @@
             transition: 0.2s;
         }
         .modal-box .close-modal:hover {
-            color: #C41E3A;
+            color: #DC2626;
             transform: rotate(90deg);
         }
         .modal-box .modal-star {
-            color: #C41E3A;
+            color: #FACC15;
             font-size: 0.8rem;
             letter-spacing: 6px;
             margin-bottom: 4px;
-            opacity: 0.4;
+            opacity: 0.8;
         }
         .modal-box h2 {
             font-family: 'Playfair Display', serif;
@@ -1120,12 +1126,12 @@
             transition: 0.25s;
         }
         .modal-box input:focus {
-            border-color: #C41E3A;
-            box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.08);
+            border-color: #DC2626;
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.08);
         }
         .modal-box .submit-btn {
             width: 100%;
-            background: #C41E3A;
+            background: #DC2626;
             color: #07090b;
             padding: 14px;
             border: none;
@@ -1134,17 +1140,17 @@
             font-size: 1rem;
             cursor: pointer;
             transition: 0.3s;
-            box-shadow: 0 8px 0 #7A0F1F, 0 8px 24px rgba(196, 30, 58, 0.12);
+            box-shadow: 0 8px 0 #991B1B, 0 8px 24px rgba(220, 38, 38, 0.12);
             transform: translateY(0);
         }
         .modal-box .submit-btn:hover {
-            background: #D93A5A;
+            background: #EF4444;
             transform: translateY(-4px);
-            box-shadow: 0 12px 0 #7A0F1F, 0 16px 36px rgba(196, 30, 58, 0.2);
+            box-shadow: 0 12px 0 #991B1B, 0 16px 36px rgba(220, 38, 38, 0.2);
         }
         .modal-box .submit-btn:active {
             transform: translateY(6px);
-            box-shadow: 0 4px 0 #7A0F1F, 0 8px 20px rgba(196, 30, 58, 0.12);
+            box-shadow: 0 4px 0 #991B1B, 0 8px 20px rgba(220, 38, 38, 0.12);
         }
 
         /* ============================================================
@@ -1296,7 +1302,7 @@
     HERO
     ============================================================ -->
     <section class="hero">
-        <!-- floating stars -->
+        <!-- floating yellow stars -->
         <div class="hero-stars">
             <span class="star-float">✦</span>
             <span class="star-float">✦</span>
@@ -1309,16 +1315,17 @@
         </div>
 
         <div class="hero-content">
+            <!-- YELLOW BADGE -->
             <div class="hero-badge">
                 <span class="dot"></span>
                 <span>Live Mentorship • Proven Systems</span>
-                <span style="opacity:0.3;margin:0 4px;">|</span>
+                <span style="opacity:0.5;margin:0 4px;">|</span>
                 <span>✦ 5,000+ Students</span>
             </div>
 
             <h1>
                 Master the Markets.<br>
-                <span class="highlight">Elevate Your Life.</span>
+                <span class="highlight">Elevate Your Life.</span> <!-- YELLOW STAR AFTER -->
             </h1>
 
             <p>Premium trading education built on proven systems, live mentorship, and a community of successful traders.</p>
@@ -1370,7 +1377,7 @@
                 <span class="mission-icon">✦</span>
                 <div>
                     <strong>Our mission</strong> — to demystify the stock market and equip every Indian with a winning system.
-                    No tips, no noise. <span style="color:#C41E3A;">Just skill.</span>
+                    No tips, no noise. <span style="color:#DC2626;">Just skill.</span>
                 </div>
             </div>
         </section>
@@ -1382,7 +1389,7 @@
                 <span class="star">✦ ✦ ✦</span>
                 <span class="line"></span>
             </div>
-            <h2 class="section-title">Without vs. <span class="cardinal">With the Right System</span></h2>
+            <h2 class="section-title">Without vs. <span class="red">With the Right System</span></h2>
             <p class="section-sub">The difference between guesswork and a proven edge.</p>
 
             <div class="comparison-grid" style="margin-top:28px;">
@@ -1421,7 +1428,7 @@
                 <span class="star">✦ ✦ ✦</span>
                 <span class="line"></span>
             </div>
-            <h2 class="section-title">📚 Our <span class="cardinal">Flagship Courses</span></h2>
+            <h2 class="section-title">📚 Our <span class="red">Flagship Courses</span></h2>
             <p class="section-sub">Choose your path — from beginner to advanced.</p>
 
             <div class="course-grid" style="margin-top:24px;">
@@ -1467,7 +1474,7 @@
                 <span class="star">✦ ✦ ✦</span>
                 <span class="line"></span>
             </div>
-            <h2 class="section-title">🔥 Why <span class="cardinal">Trade Magnets</span></h2>
+            <h2 class="section-title">🔥 Why <span class="red">Trade Magnets</span></h2>
             <div class="usp-grid" style="margin-top:20px;">
                 <div class="usp-item"><i class="fas fa-chalkboard"></i><span>Live Classes</span></div>
                 <div class="usp-item"><i class="fas fa-chart-pie"></i><span>Real Trade Examples</span></div>
@@ -1485,7 +1492,7 @@
                 <span class="star">✦ ✦ ✦</span>
                 <span class="line"></span>
             </div>
-            <h2 class="section-title">⭐ Student <span class="cardinal">Reviews</span></h2>
+            <h2 class="section-title">⭐ Student <span class="red">Reviews</span></h2>
             <p class="section-sub">Real stories from real traders.</p>
 
             <div class="reviews-grid" style="margin-top:20px;">
@@ -1523,7 +1530,7 @@
                 <span class="star">✦ ✦ ✦</span>
                 <span class="line"></span>
             </div>
-            <h2 class="section-title">🎁 Free <span class="cardinal">Bonuses</span> When You Enroll</h2>
+            <h2 class="section-title">🎁 Free <span class="red">Bonuses</span> When You Enroll</h2>
             <p class="section-sub">Exclusive resources to accelerate your trading journey.</p>
 
             <div class="bonus-grid" style="margin-top:20px;">
@@ -1547,8 +1554,8 @@
                 </div>
             </div>
             <p style="color:#8898a8; font-size:0.9rem; margin-top:12px; text-align:center;">
-                Total value: <strong style="color:#C41E3A;">₹3,297</strong> – Yours FREE with any course.
-                <span style="display:inline-block;margin-left:6px;color:#C41E3A;">✦</span>
+                Total value: <strong style="color:#DC2626;">₹3,297</strong> – Yours FREE with any course.
+                <span style="display:inline-block;margin-left:6px;color:#FACC15;">✦</span>
             </p>
         </section>
 
@@ -1559,7 +1566,7 @@
                 <span class="star">✦ ✦ ✦</span>
                 <span class="line"></span>
             </div>
-            <h2 class="section-title">❓ Frequently <span class="cardinal">Asked Questions</span></h2>
+            <h2 class="section-title">❓ Frequently <span class="red">Asked Questions</span></h2>
 
             <div class="faq-list" style="margin-top:20px;">
                 <div class="faq-item">
@@ -1606,7 +1613,7 @@
                 <div class="footer-logo">
                     <div class="logo-text" style="font-size:1.5rem;">
                         TRADE MAGNETS
-                        <span style="font-size:0.8rem;opacity:0.4;">✦</span>
+                        <span style="font-size:0.8rem;opacity:0.9; color:#FACC15;">✦</span>
                     </div>
                     <p class="tagline">Learn to Trade. Earn for Life.</p>
                     <div class="social-icons">
@@ -1637,7 +1644,7 @@
             </div>
             <div class="footer-bottom">
                 © 2026 Trade Magnets. All rights reserved.
-                <span style="color:#C41E3A;margin:0 6px;">✦</span>
+                <span style="color:#FACC15;margin:0 6px;">✦</span>
             </div>
         </footer>
 
